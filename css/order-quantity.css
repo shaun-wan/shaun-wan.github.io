@@ -1,0 +1,73 @@
+.order-nav {
+    padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 25px;
+}
+
+.panel-heading span {
+     margin-top: -20px;
+     font-size: 15px;
+ }
+
+.clickable {
+     cursor: pointer;
+ }
+ 
+.order-selection-section {
+     margin-top: 40px;
+     padding: 0 10px;
+ }
+
+.panel-body .list-group {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e4e8eb;
+}
+
+.food-thumbnail img {
+    width: 100%;
+    height: 150px;
+}
+
+.food-info .food-title {
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.food-info .food-description {
+    font-weight: 400;
+}
+
+.food-min-price {
+    font-weight: 400;
+}
+
+.food-min-price .min-price {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.order-quantity-selection {
+    padding: 15px;
+}
+
+.order-quantity-selection > .row {
+    width: 99%;
+    padding: 10px 0px;
+    margin: auto;
+}
+
+.order-quantity-selection .order-description {
+    padding-top: 5px;
+}
+
+.order-quantity-selection .order-price {
+    padding-top: 5px;
+}
+
+.order-quantity-selection > .quantity-row {
+    border-bottom: thin solid #e4e8eb;
+}
+
+.order-amount input {
+    width: 50px;
+    height: 30px;
+}

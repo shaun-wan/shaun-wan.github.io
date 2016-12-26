@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Order Quantity</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/order-quantity.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">Cater4U</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#how-it-works">How It Works</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#supplier">Become a Supplier</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    
+    <!-- Order Navigation Menu -->
+    <div class="container order-nav">
+        <div class="row">
+            <div class="col-lg-12">
+                <a href="../catering-landing-page-v1/index.html" class="btn btn-default btn-lg"> <span class="network-name">< Back</span></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Select Your Order</h2>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="order-selection-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                        
+                    <div class="panel panel-default">
+                        <div class="panel-heading clickable">
+                            <h3 class="panel-title">Appetizer</h3>
+                            <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                        </div>
+                        <div class="panel-body">
+                            <div class="list-group"> <!-- template for each food inside a category -->
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="food-thumbnail">
+                                            <img src="http://www.kraftrecipes.com/-/media/assets/recipe_images/bacon-water-chestnuts-50888-640x428.jpg?h=428&w=640&la=en&hash=99C6DD0A1CE74849133C98CF6D503DB82F9EF742" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="food-info">
+                                            <div class="food-title">Bacon Water Chestnut</div><span class="food-type"></span>
+                                            <p class="food-description">All delicious bacon bites and easy to eat.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="food-min-price pull-right">
+                                            from <span class="min-price">RM7.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-quantity-selection">
+                                    <div class="row quantity-heading">
+                                        <div class="col-lg-8">
+                                            <div class="heading">Please choose from the following options:</div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="heading">Price</div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="heading">Quantity
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="heading">Notes</div>
+                                        </div>
+                                    </div>
+                                    <div class="row quantity-row">
+                                        <div class="col-lg-8">
+                                            <div class="order-description">5 small size pieces</div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="order-price">RM7.00</div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-amount">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-note"><button type="button" class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Note</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="row quantity-row">
+                                        <div class="col-lg-8">
+                                            <div class="order-description">8 small size pieces</div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="order-price">RM10.00</div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-amount">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-note"><button type="button" class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Note</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-group">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="food-thumbnail">
+                                            <img src="http://assets.kraftfoods.com/recipe_images/opendeploy/114695_640x428.jpg" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="food-info">
+                                            <div class="food-title">Party Ham Sandwiches</div><span class="food-type"></span>
+                                            <p class="food-description">You'll want to come back for more.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="food-min-price pull-right">
+                                            from <span class="min-price">RM20.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-quantity-selection">
+                                    <div class="row quantity-heading">
+                                        <div class="col-lg-8">
+                                            <div class="heading">Please choose from the following options:</div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="heading">Price</div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="heading">Quantity
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="heading">Notes</div>
+                                        </div>
+                                    </div>
+                                    <div class="row quantity-row">
+                                        <div class="col-lg-8">
+                                            <div class="order-description">5 small size pieces</div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="order-price">RM20.00</div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-amount">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-note"><button type="button" class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Note</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="row quantity-row">
+                                        <div class="col-lg-8">
+                                            <div class="order-description">8 small size pieces</div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="order-price">RM25.00</div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-amount">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-note"><button type="button" class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Note</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Main</h3>
+                            <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                        </div>
+                        <div class="panel-body">
+                            <div class="list-group"> <!-- template for each food inside a category -->
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="food-thumbnail">
+                                            <img src="http://simplesimoncatering.co.uk/wp-content/uploads/2012/10/baked-salmon-with-herb-butter-and-roasted-new-potatatoes1.jpg" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="food-info">
+                                            <div class="food-title">Baked Salmon with Herb Butter</div><span class="food-type"></span>
+                                            <p class="food-description">It's so fresh that you wouldn't even believe it. Served with roasted potatoes.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="food-min-price pull-right">
+                                            from <span class="min-price">RM30.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-quantity-selection">
+                                    <div class="row quantity-heading">
+                                        <div class="col-lg-8">
+                                            <div class="heading">Please choose from the following options:</div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="heading">Price</div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="heading">Quantity
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="heading">Notes</div>
+                                        </div>
+                                    </div>
+                                    <div class="row quantity-row">
+                                        <div class="col-lg-8">
+                                            <div class="order-description">Baked Salmon</div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="order-price">RM30.00 per pax</div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-amount">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-note"><button type="button" class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Note</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="row quantity-row">
+                                        <div class="col-lg-8">
+                                            <div class="order-description">Roast Potatoes</div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="order-price">RM10.00 per pax</div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-amount">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-note"><button type="button" class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Note</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-group"> <!-- template for each food inside a category -->
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="food-thumbnail">
+                                            <img src="http://lekhafoods.com/media/93498/Chicken-Barbeque-730x390.jpg" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="food-info">
+                                            <div class="food-title">Roasted Herb Chicken</div><span class="food-type"></span>
+                                            <p class="food-description">Seasoned with fresh herb that will feed your nose as well as mouth.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="food-min-price pull-right">
+                                            from <span class="min-price">RM35.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-quantity-selection">
+                                    <div class="row quantity-heading">
+                                        <div class="col-lg-8">
+                                            <div class="heading">Please choose from the following options:</div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="heading">Price</div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="heading">Quantity
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="heading">Notes</div>
+                                        </div>
+                                    </div>
+                                    <div class="row quantity-row">
+                                        <div class="col-lg-8">
+                                            <div class="order-description">Half chicken</div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="order-price">RM35.00</div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-amount">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-note"><button type="button" class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Note</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="row quantity-row">
+                                        <div class="col-lg-8">
+                                            <div class="order-description">Whole Chicken</div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="order-price">RM50.00</div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-amount">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-note"><button type="button" class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Note</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Dessert</h3>
+                            <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                        </div>
+                        <div class="panel-body">
+                            <div class="list-group"> <!-- template for each food inside a category -->
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="food-thumbnail">
+                                            <img src="https://www.ghirardelli.com/media/recipe/recipes/1480x760_-_GCC_-_Lava_Cake.jpg" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="food-info">
+                                            <div class="food-title">Chocolate Lava Cake</div><span class="food-type"></span>
+                                            <p class="food-description">Let it just melt in your mouth.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="food-min-price pull-right">
+                                            from <span class="min-price">RM10.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-quantity-selection">
+                                    <div class="row quantity-heading">
+                                        <div class="col-lg-8">
+                                            <div class="heading">Please choose from the following options:</div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="heading">Price</div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="heading">Quantity
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="heading">Notes</div>
+                                        </div>
+                                    </div>
+                                    <div class="row quantity-row">
+                                        <div class="col-lg-8">
+                                            <div class="order-description">Lava Cake</div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="order-price">RM10.00 per cake</div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-amount">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-note"><button type="button" class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Note</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-group"> <!-- template for each food inside a category -->
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="food-thumbnail">
+                                            <img src="http://www.bbcgoodfood.com/sites/default/files/recipe_images/recipe-image-legacy-id--2567_12.jpg" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="food-info">
+                                            <div class="food-title">Strawberry Cheesecake</div><span class="food-type"></span>
+                                            <p class="food-description">Tingly sensation.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="food-min-price pull-right">
+                                            from <span class="min-price">RM10.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-quantity-selection">
+                                    <div class="row quantity-heading">
+                                        <div class="col-lg-8">
+                                            <div class="heading">Please choose from the following options:</div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="heading">Price</div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="heading">Quantity
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="heading">Notes</div>
+                                        </div>
+                                    </div>
+                                    <div class="row quantity-row">
+                                        <div class="col-lg-8">
+                                            <div class="order-description">Cheesecake</div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="order-price">RM10.00 per cake</div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-amount">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <div class="order-note"><button type="button" class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Note</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                                
+            
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#supplier">Become a Supplier</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/order-quantity.js"></script>
+
+</body>
+
+</html>
