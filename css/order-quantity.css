@@ -68,6 +68,12 @@
     padding-top: 5px;
 }
 
+@media(max-width:768px) {
+	.order-quantity-selection .order-note {
+		padding: 5px 0;
+	}
+}
+
 .order-quantity-selection > .quantity-row {
     border-bottom: thin solid #e4e8eb;
 }
