@@ -28,7 +28,7 @@
 }
 
 .food-info .food-title {
-    font-size: 18px;
+    font-size: 20px;
     padding-bottom: 5px;
 }
 
@@ -50,9 +50,14 @@
 }
 
 .order-quantity-selection > .row {
-    width: 99%;
-    padding: 10px 0px;
-    margin: auto;
+		padding: 10px 0px;
+}
+
+@media(min-width:1200px) {
+	.order-quantity-selection > .row {
+		width: 99%;
+		margin: auto;
+	}
 }
 
 .order-quantity-selection .order-description {
@@ -63,6 +68,12 @@
     padding-top: 5px;
 }
 
+@media(max-width:768px) {
+	.order-quantity-selection .order-note {
+		padding: 5px 0;
+	}
+}
+
 .order-quantity-selection > .quantity-row {
     border-bottom: thin solid #e4e8eb;
 }
@@ -70,4 +81,23 @@
 .order-amount input {
     width: 50px;
     height: 30px;
+}
+
+.checkout-row  > .container{ 
+	padding-top: 20px;
+	border-top: thin solid #e4e8eb;
+}
+
+.checkout-row .continue-btn  btn{
+	font-weight: bold;
+}
+
+.checkout-row .sub-total-label, .checkout-row .sub-total-amount {
+	padding-top: 7px;
+	font-size: 20px;
+
+}
+
+footer {
+	margin-top: 40px;
 }
