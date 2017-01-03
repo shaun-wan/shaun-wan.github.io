@@ -141,9 +141,13 @@
                         <img src="img/supplier/pizza.jpeg" alt="">
                         <div class="caption">
                             <!--<h4 class="pull-right">$94.99</h4>-->
-                            <h4><a href="#">Pizzalarie</a>
-                            </h4>
-                            <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                            <div class="title">
+								<h4><a href="#">Pizzalarie</a></h4>
+							</div>
+							<div class="info">
+								<button type="button" class="btn btn-default btn-circle supplier-info" data-container="body" data-toggle="popover" data-content="Supplier info goes in here"><i class="fa fa-info" aria-hidden="true"></i></button>
+							</div>
+                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                         <div class="ratings">
                             <p class="pull-right">15 reviews</p>
@@ -162,8 +166,12 @@
                     <div class="thumbnail">
                         <img src="img/supplier/vege.jpg" alt="">
                         <div class="caption">
-                            <h4><a href="#">Healthy Hut</a>
-                            </h4>
+							<div class="title">
+								<h4><a href="#">Healthy Hut</a></h4>
+							</div>
+							<div class="info">
+								<button type="button" class="btn btn-default btn-circle supplier-info" data-container="body" data-toggle="popover" data-content="Supplier info goes in here"><i class="fa fa-info" aria-hidden="true"></i></button>
+							</div>
                             <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                         <div class="ratings">
@@ -183,8 +191,12 @@
                     <div class="thumbnail">
                         <img src="img/supplier/western.jpg" alt="">
                         <div class="caption">
-                            <h4><a href="#">Fox and Hounds</a>
-                            </h4>
+                            <div class="title">
+								<h4><a href="#">Fox and Hounds</a></h4>
+							</div>
+							<div class="info">
+								<button type="button" class="btn btn-default btn-circle supplier-info" data-container="body" data-toggle="popover" data-content="Supplier info goes in here"><i class="fa fa-info" aria-hidden="true"></i></button>
+							</div>
                             <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                         <div class="ratings">
@@ -204,8 +216,12 @@
                     <div class="thumbnail">
                         <img src="img/supplier/fish.jpeg" alt="">
                         <div class="caption">
-                            <h4><a href="#">Fresh Catch</a>
-                            </h4>
+                            <div class="title">
+								<h4><a href="#">Fresh Catch</a></h4>
+							</div>
+							<div class="info">
+								<button type="button" class="btn btn-default btn-circle supplier-info" data-container="body" data-toggle="popover" data-content="Supplier info goes in here"><i class="fa fa-info" aria-hidden="true"></i></button>
+							</div>
                             <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                         <div class="ratings">
@@ -225,8 +241,12 @@
                     <div class="thumbnail">
                         <img src="img/supplier/bbq.jpg" alt="">
                         <div class="caption">
-                            <h4><a href="#">Schweinsteiger</a>
-                            </h4>
+							<div class="title">
+								<h4><a href="#">Schweinsteiger</a></h4>
+							</div>
+							<div class="info">
+								<button type="button" class="btn btn-default btn-circle supplier-info" data-container="body" data-toggle="popover" data-content="Supplier info goes in here"><i class="fa fa-info" aria-hidden="true"></i></button>
+							</div>
                             <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                         <div class="ratings">
@@ -284,7 +304,13 @@
     <script>
         $(document).ready(function(){
             //hardcode the link for each thumbnail
-           $('.supplier-selection-section').find('a').attr("href", "/order-quantity.html")
+           $('.supplier-selection-section').find('a').attr("href", "/order-quantity.html");
+		
+			$('.supplier-info').popover({
+				'placement' : 'auto top',
+				'trigger' : 'hover'
+			});
+
         });
     </script>
 
