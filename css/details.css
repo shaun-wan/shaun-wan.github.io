@@ -1,0 +1,18 @@
+.order-nav {
+    padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 25px;
+}
+
+.details {
+	padding: 20px 0;
+}
+
+@media(min-width:992px) {
+	#details-form {
+		margin-left: -120px;
+	}
+}
+
+footer {
+	margin-top:40px;
+}
