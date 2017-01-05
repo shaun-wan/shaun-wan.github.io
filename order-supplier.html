@@ -32,7 +32,6 @@
 </head>
 
 <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
@@ -74,7 +73,7 @@
     <div class="container order-nav">
         <div class="row">
             <div class="col-lg-12">
-                <a href="../catering-landing-page-v1/index.html" class="btn btn-default btn-lg"> <span class="network-name">< Back</span></a>
+                <a href="index.html" class="btn btn-default btn-lg"> <span class="network-name">< Back</span></a>
             </div>
         </div>
     </div>
@@ -89,47 +88,60 @@
     
     
     <div class="filter-supplier-section">
-	<div class="container">
-	    <div class="row">
-		<div class="col-lg-12">
-		    <div class="filter-supplier">
-			<div class="row">   
-				<h4>Refine your search:</h4>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="filter-supplier">
+						<div class="row">   
+							<h4>Refine your search:</h4>
 
-				<div class="form-group">
-					<div class="col-lg-3 col-sm-4">
-						<div class="radio">
-							<label><input type="radio" name="supplier-type" checked="checked">All</label>
-						</div>
-					</div>
-					<div class="col-lg-3 col-sm-4">
-						<div class="radio">
-							<label><input type="radio" name="supplier-type">Corporate</label>
-						</div>
-						<div class="radio">
-							<label><input type="radio" name="supplier-type">Food Truck</label>
-						</div>
-						<div class="radio">
-							<label><input type="radio" name="supplier-type">Cakes & Desserts</label>
-						</div>
-					</div>
-					<div class="col-lg-3 col-sm-4">
-						<div class="radio">
-							<label><input type="radio" name="supplier-type">Barbeque</label>
-						</div>
-						<div class="radio">
-							<label><input type="radio" name="supplier-type">Halal</label>
-						</div>
-						<div class="radio">
-							<label><input type="radio" name="supplier-type">Non-Halal</label>
+							<div class="form-group">
+								<div class="col-lg-3 col-sm-4">
+									<div class="radio">
+										<label><input type="radio" name="supplier-type" checked="checked">All</label>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-4">
+									<div class="radio">
+										<label><input type="radio" name="supplier-type">Corporate</label>
+									</div>
+									<div class="radio">
+										<label><input type="radio" name="supplier-type">Food Truck</label>
+									</div>
+									<div class="radio">
+										<label><input type="radio" name="supplier-type">Cakes & Desserts</label>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-4">
+									<div class="radio">
+										<label><input type="radio" name="supplier-type">Barbeque</label>
+									</div>
+									<div class="radio">
+										<label><input type="radio" name="supplier-type">Halal</label>
+									</div>
+									<div class="radio">
+										<label><input type="radio" name="supplier-type">Non-Halal</label>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		    </div>
+			</div>   
 		</div>
-	    </div>   
-	</div>
+    </div>
+	
+	<div class="filter-date-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="date-filter-group">
+						<label>Viewing caterers for </label>
+						<input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+					</div>
+				</div>
+			</div>   
+		</div>
     </div>
     
     
@@ -300,6 +312,11 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+	
+	<!-- Datetime picker -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
     
     <script>
         $(document).ready(function(){
@@ -310,6 +327,17 @@
 				'placement' : 'auto top',
 				'trigger' : 'hover'
 			});
+			
+			//init date filter
+			var date_filter=$('input[name="date"]'); //our date input has the name "date"
+			var dateToday = new Date();
+			date_filter.datepicker({
+				format: 'dd/M/yyyy',
+				todayHighlight: true,
+				autoclose: true,
+			})
+			
+			date_filter.datepicker('setDate', dateToday); //set default value to today's date
 
         });
     </script>
